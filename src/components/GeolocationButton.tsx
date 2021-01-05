@@ -31,7 +31,7 @@ const GeolocationButton: React.FC = () => {
       <IonLoading
         isOpen={loading}
         onDidDismiss={() => setLoading(false)}
-        message={"Getting Location..."}
+        message={"Suche Position..."}
       />
       <IonToast
         isOpen={error.showError}
@@ -42,7 +42,7 @@ const GeolocationButton: React.FC = () => {
       <IonButton color="primary" onClick={getLocation}>
         {position
           ? `${position.coords.latitude} ${position.coords.longitude}`
-          : "Get Location"}
+          : "Hole Positionsdaten"}
       </IonButton>
     </>
   );
